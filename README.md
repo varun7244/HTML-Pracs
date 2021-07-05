@@ -14,7 +14,7 @@ All of the live previews can be found below.
   
 ## FAQ
 
-#### How check various practical codes?
+#### How to check various practical codes?
 
 Simply look at the subbranches where each source code is given a practical number.
 
