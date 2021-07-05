@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Styling the Body element i.e. Color, 
+        Font, Alignment */
+        body {
+
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #ff153f;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+
+            background-color: #f4c2c2;
+            border: 1px solid #000;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1>Introduction</h1>
+    </center>
+    <p>The cat (Felis catus) is a domestic species of small carnivorous mammalIt is the only domesticated species in the
+        family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the
+        family.A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human
+        contact.Domestic cats are valued by humans for companionship and their ability to hunt rodents. About 60 cat
+        breeds are recognized by various cat registries.</p>
+
+    <!-- image Map -->
+    <h4>To learn more about the specific cats, simply click on them 👇 </h4>
+    <img width="400" height="400" src="images.jpeg" alt="cat breeds" usemap="#cat">
+    <map name="cat">
+        <area target="_blank" coords="15,50,130,180" href="https://en.m.wikipedia.org/wiki/American_Shorthair"
+            shape="square">
+        <area target="_blank" href="https://en.m.wikipedia.org/wiki/Sphynx_cat" coords="200,110,65,100" shape="circle">
+        <area target="_blank" coords="270,50,390,180" href="https://en.wikipedia.org/wiki/Siamese_cat" shape="square">
+        <area target="_blank" href="https://en.wikipedia.org/wiki/Birman" coords="75,280,65,105" shape="circle">
+        <area target="_blank" href="https://en.wikipedia.org/wiki/Oriental_Shorthair" coords="205,280,65,105"
+            shape="circle">
+        <area target="_blank" coords="270,390,380,210" href="https://en.wikipedia.org/wiki/Bengal_cat" shape="square">
+    </map>
+    <h1>Cat Adoption Form 🐈</h1>
+    <!-- Create Form -->
+    <form id="form">
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">Name</label>
+            <!-- Input Type Text -->
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+            <!-- Input Type Email-->
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <!-- Input Type Text -->
+            <input type="text" id="age" placeholder="Enter your age" />
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Worker</option>
+                <option value="professional">Housekeeper </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label> Any of your friends own pets?</label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Yes</input>
+            </label>
+
+            <label for="recommed-2">
+
+                <input type="radio" id="recommed-2" name="recommed">No</input>
+
+            </label>
+
+            <label for="recommed-3">
+
+                <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+
+            </label>
+
+        </div>
+
+        <div class="form-control">
+            <label>In which cat breeds you are interested in.
+                <small>(Check all that apply)</small>
+            </label>
+
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Abyssinian</input></label>
+            <label for="inp-2">
+
+                <input type="checkbox" name="inp">American Bobtail</input></label>
+            <label for="inp-3">
+
+                <input type="checkbox" name="inp">Just Any cat</input></label>
+            <label for="inp-4">
+
+                <input type="checkbox" name="inp">American Curl</input></label>
+            <label for="inp-5">
+        </div>
+
+        <div class="form-control">
+            <label for="comment">Any comments or suggestions</label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">Submit</button>
+    </form>
+    <!-- Embedded Cat Video -->
+    <video width="100%" height="240" controls>
+        <source src="cat.mp4" type="video/mp4">
+    </video>
+
+</body>
+
+</html>
