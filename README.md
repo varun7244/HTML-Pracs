@@ -10,6 +10,7 @@ All of the live previews can be found below.
 
 - Practical-1 [Click Me](https://demo.rohan.gq)
 - Practical-2 [Click Me](https://demo2.rohan.gq)
+- Practical-3 [Click Me](https://demo3.rohan.gq)
 
   
 ## FAQ
