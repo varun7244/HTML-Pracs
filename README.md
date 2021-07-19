@@ -8,9 +8,9 @@ The source code is divided into subbraches, each of which is given a name based 
 ## Live Demo
 All of the live previews can be found below.
 
-- Practical-1 [Click Me](https://demo.rohan.gq)
-- Practical-2 [Click Me](https://demo2.rohan.gq)
-- Practical-3 [Click Me](https://demo3.rohan.gq)
+- Practical-1 [Click Me](https://1.pracs.ml)
+- Practical-2 [Click Me](https://2.pracs.ml)
+- Practical-3 [Click Me](https://3.pracs.ml)
 
   
 ## FAQ
