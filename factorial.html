@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Factorial</title>
+    <script>
+      function fact() {
+        var a = t1.value;
+        var f = 1;
+        for (i = 1; i <= a; i++) {
+          f = f * i;
+        }
+        alert("Factorial of the number is:" + f);
+      }
+    </script>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        color: aliceblue;
+        background-color: #121212;
+      }
+      #style {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+        justify-content: center;
+        text-align: center;
+      }
+      input {
+        margin: 0 30%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="style">
+      <h2>Find Factorial</h2>
+      Enter number : <input type="text" id="t1" /><br />
+      <input
+        type="button"
+        value="Calculate Factorial"
+        onclick="fact()"
+      />
+    </div>
+  </body>
+</html>

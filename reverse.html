@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse Number</title>
+    <script>
+      function rev() {
+        var num = t1.value;
+        var rem,
+          rev = 0;
+        while (num > 0) {
+          rem = num % 10;
+          rev = rev * 10 + rem;
+          num = parseInt(num / 10);
+        }
+        alert("Reverse Number: " + rev);
+      }
+    </script>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        color: aliceblue;
+        background-color: #121212;
+      }
+      #style {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+        justify-content: center;
+        text-align: center;
+      }
+      input {
+        margin: 0 30%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="style">
+      <h2>Reverse Number</h2>
+      Enter Number : <input type="text" id="t1" /> <br />
+      <input type="button" value="reverse" onclick="rev()" />
+    </div>
+  </body>
+</html>

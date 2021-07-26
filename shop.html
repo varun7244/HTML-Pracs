@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <script>
+      function calc() {
+        var sum = 0;
+        if (c1.checked == true) {
+          sum = sum + 3999;
+        }
+        if (c2.checked == true) {
+          sum = sum + 4999;
+        }
+        if (c3.checked == true) {
+          sum = sum + 5969;
+        }
+        alert("Total Cost : " + sum + "$");
+      }
+    </script>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        color: #fff;
+        background-color: #121212;
+      }
+      #style {
+        display: grid;
+        width: 100vw;
+        min-height: 100vh;
+        text-align: center;
+      }
+      input,
+      form {
+        margin: 0%;
+        text-align: center;
+      }
+      table {
+        align-items: center;
+        width: 100vw;
+      }
+      img {
+        height: 20%;
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="style">
+      <h1>Shop</h1>
+      <form name="f1">
+        <table border="2px" cellpadding="10px">
+          <tr>
+            <th>Select</th>
+            <th>Watches</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="c1" />
+            </td>
+            <td>
+              <img src="watch.jpeg" alt="watch" />
+            </td>
+            <td>Price : 3999</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="c2" />
+            </td>
+            <td>
+              <img src="watch2.jpeg" alt="watch2" />
+            </td>
+            <td>Price : 4999</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="c3" />
+            </td>
+            <td>
+              <img src="apple.jpeg" alt="watch3" />
+            </td>
+            <td>Price : 5969</td>
+          </tr>
+        </table>
+        <br />
+        <input type="button" value="Checkout" onclick="calc()" />
+      </form>
+    </div>
+  </body>
+</html>

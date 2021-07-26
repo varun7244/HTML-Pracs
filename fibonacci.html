@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci</title>
+    <script>
+      function fib() {
+        var terms = t1.value;
+        var a = 0,
+          b = 1,
+          sum;
+        document.write("Fibonacci Series: " + "<h3>" + a + "" + b);
+        for (i = 1; i <= terms - 2; i++) {
+          sum = a + b;
+          document.write("<br>" + sum);
+          a = b;
+          b = sum;
+        }
+      }
+    </script>
+    </script>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        color: aliceblue;
+        background-color: #121212;
+      }
+      #style {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+        justify-content: center;
+        text-align: center;
+      }
+      input {
+        margin: 0 30%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="style">
+      <h2>Fibonacci Series</h2>
+      Enter the limit for Fibonacci Series: <input type="text" id="t1" /><br />
+      <input type="button" value="Fibonacci" onclick="fib()" />
+    </div>
+  </body>
+</html>
