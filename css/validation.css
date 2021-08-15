@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  background-color: #121212;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 50vh;
+  justify-content: center;
+  text-align: center;
+}
+input {
+  margin: 0 30%;
+  text-align: center;
+}
+
+legend{
+    color:  rgb(221, 133, 216);
+}
+h2{
+    color: rgb(221, 133, 216);
+}

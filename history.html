@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/window-method.css" />
+    <title>History</title>
+    <script type="text/javascript">
+      function lent() {
+        alert("Total number of Urls visited by browaser:" + history.length);
+      }
+      function load_prev() {
+        window.history.back();
+      }
+      function load_next() {
+        window.history.forward();
+      }
+      function go_url() {
+        window.history.go(1);
+      }
+    </script>
+  </head>
+  <body>
+    <button class="glow-on-hover" type="button" onclick="load_prev()">Previous Page</button>
+    <button class="glow-on-hover" type="button" onclick="load_next()">Next Page</button>
+    <button class="glow-on-hover" type="button" onclick="go_url()">Visiy Url</button>
+    <button class="glow-on-hover" type="button" onclick="lent()">Length</button>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/validation.css" />
+    <title>Form validation</title>
+    <script type="text/javascript">
+      function checkuser() {
+        if (txtuser.value == "") {
+          error1.innerHTML = "Can not leave this field blank";
+          txtuser.focus();
+        } else error1.innerHTML = "";
+      }
+      function chkpass() {
+        if (txtpwd.value.length < 6) {
+          error2.innerHTML = "Maximum 6 character for password..";
+          txtpwd.focus();
+        }
+        error1.innerHTML = "";
+      }
+      function chkphone() {
+        if (isNaN(txtph.value)) {
+          error3.innerHTML = "Invalid phone num";
+          txtph.focus();
+        }
+        else3.innerHTML = "";
+      }
+      function chkmail() {
+        var pat = /^[^0-9]([a-z A-Z 0-9]{6,90})@([a-z A-Z]{3,20}).(com$)/;
+        var result = pat.test(txtmail.value);
+        if (result == false) {
+          error4.innerHTML = "Invalid E-mail";
+          txtmail.focus();
+        } else error4.innerHTML = "";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <fieldset>
+        <div class="first">
+            <legend>User Login</legend>
+          <h3>Enter username</h3>
+          <input type="text" id="txtuser" onfocusout="checkuser()" />
+          <div style="color: red" id="error1"></div>
+
+          <h3>Enter the password</h3>
+          <input type="password" id="txtpwd" onfocusout="chkpass()" />
+          <div style="color: red" id="error2"></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="first">
+          <legend>User's personal information</legend>
+          <h3>Enter Phone Number</h3>
+          <input type="text" id="txtph" onfocusout="chkphone()" />
+          <div style="color: red" id="error3"></div>
+
+          <h3>Enter E-mail ID</h3>
+          <input type="text" id="txtmail" onfocusout="chkmail()" />
+          <div style="color: red" id="error4"></div>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
