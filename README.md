@@ -12,6 +12,7 @@ All of the live previews can be found below.
 - Practical-2 [Click Me](https://2.pracs.ml)
 - Practical-3 [Click Me](https://3.pracs.ml)
 - Practical-4 [Click Me](https://4.pracs.ml)
+- Practical-5 [Click Me](https://5.pracs.ml)
   
 ## FAQ
 
